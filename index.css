@@ -1,0 +1,105 @@
+body{
+    font-size: 15px;
+    font-family: "Work Sans", sans-serif;
+}
+img{
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
+}
+.pers1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inf{
+margin-left: 30px;
+line-height: .5;
+padding-top: 20px;
+}
+
+.maine{
+    display: grid;
+    grid-template-columns: repeat(7,150px);
+    grid-template-areas: "lef lef lef    mid mid  rig rig  "
+    "lef lef lef    mid mid rig rig  "
+    "cl1 cl1  cl2 cl2 cl2 rig rig "
+    "cl1 cl1  cl2 cl2 cl2 rig rig "
+
+    ;
+    grid-template-rows: 220px 220px 220px 220px ;
+    justify-content: space-around;
+    overflow-y: hidden;
+
+}
+.left{ 
+    grid-area: lef;
+    background-color: rgb(77, 112, 38);
+    color: beige;
+
+    padding: 15px;
+    border-radius: 5%;
+    padding: 25px;
+    
+}
+.left  .pers1 h1{
+    font-size: 25px;
+    color: rgb(124, 103, 43);
+}
+.mide{
+    grid-area: mid;
+    background-color: rgb(190, 183, 84);
+    border-radius: 5%;
+    padding: 20px;
+    color: rgb(124, 103, 43);
+
+
+}
+.right{
+    grid-area: rig;
+    background-color: rgb(150, 201, 93 ,.5);
+    border-radius: 5%;
+    padding: 20px;
+    color: rgb(124, 103, 43);
+
+
+}
+.mide p{
+    font-size: 13px;
+} 
+.right h1{
+    font-size: 25px;
+}
+.right .inf p{
+    font-size: 15px;
+}
+.right p{
+    font-size: 15px;
+}
+.inf h1{
+    color: beige;
+    font-size: 20px;
+}
+.col1{
+    grid-area: cl1;
+    background-color: rgb(150, 201, 93 ,.5);
+    border-radius: 5%;
+    padding: 20px;
+    color: rgb(124, 103, 43);    
+    margin-top: 20px;
+
+}
+.col2{
+    grid-area: cl2;
+    background-color: rgb(150, 201, 93);
+    border-radius: 5%;
+    padding: 20px;
+    color: beige;
+    margin-top: 20px;
+
+}
+
+.col2 h1{
+    color: rgb(124, 103, 43);
+    font-size: 25px;
+
+}
